@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- BS css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- ekko css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body class="bg-light">
+    <section id="bootstrap">
+        <div class="container text-center">
+            <img class="d-block mx-auto my-5" style="width:72px; height:72px" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg">
+            <h2>Checkout Form</h2>
+            <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state<br /> that can be triggered by attempting to submit the form without completing it.</p>
+        </div>
+    </section>
+    <section id="billing">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-7">
+                   <form>
+                        <div class="title">
+                            <h3>Billing address</h3>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group" style="width:50%;">
+                                <label for="name">First Name</label>
+                                <input type="text" class="form-control" id="Fname" placeholder="first name">
+                            </div>
+                            <div class="form-group" style="width:50%;">
+                                <label for="name">Second Name</label>
+                                <input type="text" class="form-control" id="Sname" placeholder="second name">
+                            </div>
+                        </div>
+                    <!-- username -->
+                        <div class="form-group">
+                            <label for="text">Username</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-at"></i></span>
+                                </div>
+                                <input type="text" class="form-control" id="Username" placeholder="Username">
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="Email">Email<span class="text-muted">(Optional)</span></label>
+                            <input type="text" id="Email" class="form-control" placeholder="you@exampe.com">
+                        </div>
+                        <!-- address -->
+                        <div class="form-group">
+                            <label for="Address">Address</label>
+                            <input type="text" id="Address" class="form-control" placeholder="1234 Main St">
+                        </div>
+                        <!-- address2 -->
+                        <div class="form-group">
+                            <label for="Address2">Address2<span class="text-muted">(optional)</span></label>
+                            <input type="text" id="Address2" class="form-control" placeholder="Aparrtment or suite">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group" style="width:32%;">
+                                <label for="country">Country</label>
+                                <select name="country" id="country" class="form-control">
+                                    <option value="choose">choose...</option>
+                                    <option value="india">india</option>
+                                    <option value="united states">united states</option>
+                                </select>
+                            </div>
+                            <div class="form-group ml-2" style="width:32%;">
+                                <label for="states">States</label>
+                                <select name="states" id="states" class="form-control">
+                                    <option value="choose">choose...</option>
+                                    <option value="tamilnadu">tamilnadu</option>
+                                    <option value="telungana">telungana</option>
+                                </select>
+                            </div>
+                            <div class="form-group ml-2" style="width:32%;">
+                                <label for="zip">Zip</label>
+                                <input type="zip" class="form-control">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-inline">
+                            <label>
+                                <input type="checkbox" id="checkbox" class="form-control mx-2">Shipping address is the same as my billing address
+                            </label>
+                            <label>
+                                <input type="checkbox" id="checkbox" class="form-control mx-2">Save this information for next time for reference
+                            </label>
+                        </div>
+                        <hr />
+                        <h4>Payment</h4>
+                        <div class="form-inline">
+                            <label>
+                                <input type="radio" id="payment" name="payment" class="form-control mr-2">Credit card
+                            </label> 
+                        </div> 
+                        <div class="form-inline">
+                            <label>
+                                <input type="radio" id="payment"  name="payment" class="form-control mr-2">Credit card
+                            </label> 
+                        </div>
+                        <div class="form-inline">
+                            <label>
+                                <input type="radio" id="payment"  name="payment" class="form-control mr-2">Credit card
+                            </label> 
+                        </div> 
+                        <br />
+                        <div class="form-row">
+                            <div class="form-group w-50">
+                                <label for="name of card">Name of the Card</label>
+                                <input type="text" id="name of card" class="form-control">
+                                <small>Full name as displayed on card</small>
+                            </div>
+                            <div class="form-group w-50">
+                                <label for="credit card number">Credit card Number</label>
+                                <input type="text" id="credit card number" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="Expiration">Expiration</label>
+                                <input type="text" id="Expiration" class="form-control">
+                            </div>
+                            <div class="form-group ml-3">
+                                <label for="CVV">CVV</label>
+                                <input type="text" id="CVV" class="form-control">
+                            </div>
+                        </div> 
+                        <hr>
+                        <div class="form-group">
+                            <input type="Continue" value="Continue to Checkout" class="form-control btn btn-primary">
+                        </div>
+                    </form> 
+                </div> 
+                <div class="col-md-4 ml-4">
+                    <h4 class="d-flex justify-content-between align-items-center">
+                        <span>Your Cart</span>
+                        <span class="badge badge-pill badge-dark">3</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="bg-white">
+                                <h6 class="my-0 bg-white">Product Name</h6>
+                                <small class="text-muted bg-white">brief description</small>
+                            </div>
+                            <span class="text-muted bg-white">$12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="bg-white">
+                                <h6 class="my-0 bg-white">Second Product</h6>
+                                <small class="text-muted bg-white">brief description</small>
+                            </div>
+                            <span class="text-muted bg-white">$8</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="bg-white">
+                                <h6 class="my-0 bg-white">Third Item</h6>
+                                <small class="text-muted bg-white">brief description</small>
+                            </div>
+                            <span class="text-muted bg-white">$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
+                            <div class="bg-white text-success">
+                                <h6 class="my-0 bg-white">Product Name</h6>
+                                <small class="bg-white">EXAMPLE CODE</small>
+                            </div>
+                            <span class=" bg-white">-$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="bg-white">
+                                <p class="my-0 bg-white">Total(USD)</p>
+                                <small class="text-muted bg-white">brief description</small>
+                            </div>
+                            <span class="bg-white"><strong class="bg-white">$20</strong></span>
+                        </li>
+                    </ul>
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input class="form-control" placeholder="promo card">
+                            <div class="input-group-append">
+                                <button type="submit" class="input-group-text bg-dark text-white">Redeem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- BS JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
